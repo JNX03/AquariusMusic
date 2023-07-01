@@ -69,7 +69,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             function toggleSystemStatus() {
                 var action = '<?php echo ($isClosed ? "open" : "close"); ?>';
                 $.ajax({
-                    url: 'system_status.php',
+                    url: 'status.php',
                     type: 'POST',
                     data: { action: action },
                     success: function() {
