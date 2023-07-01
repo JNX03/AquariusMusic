@@ -1,6 +1,6 @@
 <?php
 // Get song requests
-$requests = file('song_requests.txt', FILE_IGNORE_NEW_LINES);
+$requests = file('song.txt', FILE_IGNORE_NEW_LINES);
 
 if (count($requests) > 0) {
     echo '<ul>';
