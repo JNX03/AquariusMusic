@@ -3,7 +3,7 @@
         $song = $_POST['song'];
 
         if (!empty($song)) {
-            $requestsFile = "song_requests.txt";
+            $requestsFile = "song.txt";
             $song = trim($song);
 
             file_put_contents($requestsFile, $song . "\n", FILE_APPEND);
